@@ -3,6 +3,6 @@ if [[ "$REQUEST_METHOD" != "POST" ]]; then
   return $(status_code 405)
 fi
 
-echo "0" > data/count
+echo "0" >data/count
 
 component '/count'
